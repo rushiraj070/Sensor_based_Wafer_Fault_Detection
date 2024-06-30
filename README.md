@@ -13,3 +13,20 @@ The motto behind figuring out the faulty wafers is to obliterate the need of hav
 **Data:** Wafers data is a collection of records about wafers produced ny numerous sensors.
 
 **Solution:** Data fetched by wafers is to be passed through the machine learning pipeline and it is to be determined whether the wafer at hand is faulty or not apparently obliterating the need and thus cost of hiring manual labour.
+
+Step by step process of completing the project:
+1. Opening Anaconda Prompt and select the specific drive as a base for the project. (I have chosen the D:/ as a base drive.)
+
+2. Creating a new environment and activating it.
+```
+conda create --p venv python==3.8 -y
+
+conda activate venv
+
+```
+Used python version 3.8 as its the most stable as per my learnings.
+
+3. Creating required packages with setup.py file and then install it.
+```
+python setup.py install
+```
