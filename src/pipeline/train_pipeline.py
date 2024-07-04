@@ -26,12 +26,12 @@ class TrainPipeline:
                 train_path=train_path, test_path=test_path
             )
 
-            r2_square = self.model_trainer.initiate_model_trainer(
+            accuracy_score = self.model_trainer.initiate_model_trainer(
                 train_array=train_arr,
                 test_array=test_arr,
                 preprocessor_path=preprocessor_file_path,
             )
-            print("training completed. Trained model score : ", r2_square)
+            print("training completed. Trained model score : ", accuracy_score)
 
         except Exception as e:
             raise CustomException(e, sys)
